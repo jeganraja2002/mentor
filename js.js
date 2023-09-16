@@ -45,3 +45,135 @@
 				up.style.opacity="1"
 		}
 	})
+
+
+	let space0 = document.querySelector("#section")
+	let space1 = document.querySelector("#section1")
+	let timeRun = document.querySelector("#section2")
+	let counts = document.querySelectorAll("[data-num]")[0]
+	let counts1 = document.querySelectorAll("[data-num]")[1]
+	let counts2 = document.querySelectorAll("[data-num]")[2]
+	let counts3 = document.querySelectorAll("[data-num]")[3]
+
+	let oneTime = 0
+	let oneTime1 = 0
+	let oneTime2 = 0
+	let oneTime3 = 0
+
+
+
+
+	window.addEventListener("scroll",(e)=>{
+
+	let numbers = 0
+
+
+		if ((timeRun.offsetTop-space1.offsetHeight-100)<scrollY) {
+
+		oneTime++	
+
+			if (oneTime<2) {
+
+				const stops = setInterval(()=>{
+	
+					numbers++
+					counts.innerHTML=numbers
+		
+				if (counts.dataset.num==numbers) {	
+					clearInterval(stops)
+					numbers=0
+					}
+	
+				},10)
+			}
+
+
+		}
+	})
+
+	window.addEventListener("scroll",(e)=>{
+
+	let numbers = 0
+
+
+		if ((timeRun.offsetTop-space1.offsetHeight-100)<scrollY) {
+
+		oneTime1++	
+
+			if (oneTime1<2) {
+
+				const stops = setInterval(()=>{
+	
+					numbers++
+					counts1.innerHTML=numbers
+		
+				if (counts1.dataset.num==numbers) {	
+					clearInterval(stops)
+					numbers=0
+					}
+	
+				},10)
+			}
+
+
+		}
+	})
+
+
+	window.addEventListener("scroll",(e)=>{
+
+	let numbers = 0
+
+
+		if ((timeRun.offsetTop-space1.offsetHeight-100)<scrollY) {
+
+		oneTime2++	
+
+			if (oneTime2<2) {
+
+				const stops = setInterval(()=>{
+	
+					numbers++
+					counts2.innerHTML=numbers
+		
+				if (counts2.dataset.num==numbers) {	
+					clearInterval(stops)
+					numbers=0
+					}
+	
+				},10)
+			}
+
+
+		}
+	})
+
+
+
+	window.addEventListener("scroll",(e)=>{
+
+	let numbers = 0
+
+
+		if ((timeRun.offsetTop-space1.offsetHeight-100)<scrollY) {
+
+		oneTime3++	
+		
+			if (oneTime3<2) {
+
+				const stops = setInterval(()=>{
+	
+					numbers++
+					counts3.innerHTML=numbers
+		
+				if (counts3.dataset.num==numbers) {	
+					clearInterval(stops)
+					numbers=0
+					}
+	
+				},10)
+			}
+
+
+		}
+	})
